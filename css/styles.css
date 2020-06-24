@@ -193,7 +193,8 @@ img {
           max-width: 200px; } }
       @media screen and (min-width: 300px) and (max-width: 640px) {
         .sectionParallax .content1 img {
-          max-width: 130px; } }
+          max-width: 130px;
+          display: none; } }
 
 .startParallax {
   max-width: 300px !important;

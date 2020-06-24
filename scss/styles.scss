@@ -193,6 +193,7 @@ img{
             }
             @include mobile{
                 max-width: 130px;
+                display: none;
             }
         }
     }
