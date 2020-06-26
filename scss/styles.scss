@@ -160,6 +160,9 @@ img{
 
 .sectionParallax{
     width: 95%;
+    @include sm-desk{
+        width: 96%;
+    }
     @include tablet{
         width: 100%;
     }
@@ -485,7 +488,8 @@ img{
         padding-top: 180px !important;
     }
     @include sm-desk{
-        min-height: 120vh;
+        background-size: cover;
+        min-height: 45rem;
         padding-top: 140px !important;
     }
     @include tablet{
@@ -495,7 +499,7 @@ img{
     }
     @include mobile{
         background-size: cover;
-        min-height: 260vh;
+        min-height: 95rem;
         padding-top: 60px !important;
         padding-bottom: 0px !important;
     }
@@ -1880,8 +1884,9 @@ img{
         padding-top: 150px !important;
     }
     @include sm-desk{
-        min-height: 120vh;
-        padding-top: 150px !important;
+        background-size: cover;
+        min-height: 140vh;
+        padding-top: 160px !important;
     }
     @include tablet{
         background-size: cover;

@@ -161,6 +161,9 @@ img {
 .sectionParallax {
   width: 95%;
   height: auto; }
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .sectionParallax {
+      width: 96%; } }
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     .sectionParallax {
       width: 100%; } }
@@ -429,7 +432,8 @@ img {
       padding-top: 180px !important; } }
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .howBlock {
-      min-height: 120vh;
+      background-size: cover;
+      min-height: 45rem;
       padding-top: 140px !important; } }
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     .howBlock {
@@ -439,7 +443,7 @@ img {
   @media screen and (min-width: 300px) and (max-width: 640px) {
     .howBlock {
       background-size: cover;
-      min-height: 260vh;
+      min-height: 95rem;
       padding-top: 60px !important;
       padding-bottom: 0px !important; } }
 
@@ -1731,8 +1735,9 @@ img {
       padding-top: 150px !important; } }
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .integrate {
-      min-height: 120vh;
-      padding-top: 150px !important; } }
+      background-size: cover;
+      min-height: 140vh;
+      padding-top: 160px !important; } }
   @media screen and (min-width: 641px) and (max-width: 1024px) {
     .integrate {
       background-size: cover;
