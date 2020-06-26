@@ -1290,6 +1290,7 @@ img{
     justify-content: center;
 }
 .auto_img{
+    height: auto !important;
     @include m-desk{
         max-width: 300px;
     }
