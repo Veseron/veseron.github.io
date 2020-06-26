@@ -439,7 +439,7 @@ img {
   @media screen and (min-width: 300px) and (max-width: 640px) {
     .howBlock {
       background-size: cover;
-      min-height: 235vh;
+      min-height: 260vh;
       padding-top: 60px !important;
       padding-bottom: 0px !important; } }
 
@@ -541,7 +541,7 @@ img {
       font-size: 10px; } }
   @media screen and (min-width: 300px) and (max-width: 640px) {
     .column-link {
-      font-size: 8px; } }
+      font-size: 10px; } }
 
 .wh-did-ell {
   width: 100%; }
@@ -612,7 +612,7 @@ img {
       line-height: 18px; } }
   @media screen and (min-width: 300px) and (max-width: 640px) {
     .infoBlock_txtInfo {
-      font-size: 8px;
+      font-size: 10px;
       line-height: 15px; } }
 
 .infoBlock_page {
@@ -648,7 +648,7 @@ img {
 
 @media screen and (min-width: 300px) and (max-width: 640px) {
   .infoBlock_phrase {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
 .infoBlock_phraseSmall {
   font-size: 16px; }
@@ -718,7 +718,7 @@ img {
   @media screen and (min-width: 300px) and (max-width: 640px) {
     .adv_Txt {
       line-height: 15px;
-      font-size: 8px; } }
+      font-size: 10px; } }
 
 .blueBar {
   background-color: #6c86ff;
@@ -1085,7 +1085,7 @@ img {
 
 @media screen and (min-width: 300px) and (max-width: 640px) {
   .title-reg {
-    font-size: 8px; } }
+    font-size: 10px; } }
 
 .engine_row_circle {
   margin: 50px; }
@@ -1638,8 +1638,7 @@ img {
 
 .general_icon {
   margin: 10px;
-  max-width: 60px;
-  height: auto; }
+  max-width: 60px; }
   @media screen and (min-width: 1281px) and (max-width: 1550px) {
     .general_icon {
       max-width: 50px; } }

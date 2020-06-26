@@ -495,7 +495,7 @@ img{
     }
     @include mobile{
         background-size: cover;
-        min-height: 235vh;
+        min-height: 260vh;
         padding-top: 60px !important;
         padding-bottom: 0px !important;
     }
@@ -603,7 +603,7 @@ img{
         font-size: 10px;
     }
     @include mobile{
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
@@ -682,7 +682,7 @@ img{
         line-height: 18px;
     }
     @include mobile{
-        font-size: 8px;
+        font-size: 10px;
         line-height: 15px;
     }
 }
@@ -719,7 +719,7 @@ img{
         font-size: 17px;
     }
     @include mobile{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -795,7 +795,7 @@ img{
     }
     @include mobile{
         line-height: 15px;
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
@@ -1182,7 +1182,7 @@ img{
         font-size: 10px;
     }
     @include mobile{
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
@@ -1781,7 +1781,6 @@ img{
 .general_icon{
     margin: 10px;
     max-width: 60px;
-    height: auto;
     @include m-desk{
         max-width: 50px;
     }
