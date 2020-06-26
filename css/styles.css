@@ -683,10 +683,7 @@ img {
   @media screen and (min-width: 300px) and (max-width: 640px) {
     .adv {
       max-width: 300px;
-      padding: 0;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 0px; } }
+      padding: 0; } }
 
 .adv_icon {
   margin: 10px;
