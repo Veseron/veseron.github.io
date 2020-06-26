@@ -1432,24 +1432,10 @@ img {
 .grow_bb-cont {
   display: block;
   position: absolute;
-  left: 14rem;
-  top: -3rem; }
-  @media screen and (min-width: 1281px) and (max-width: 1550px) {
-    .grow_bb-cont {
-      left: 11.5rem;
-      top: -2.5rem; } }
-  @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .grow_bb-cont {
-      left: 10rem;
-      top: -2.5rem; } }
-  @media screen and (min-width: 641px) and (max-width: 1024px) {
-    .grow_bb-cont {
-      left: 6.5rem;
-      top: -2rem; } }
-  @media screen and (min-width: 300px) and (max-width: 640px) {
-    .grow_bb-cont {
-      left: 5.5rem;
-      top: -1.5rem; } }
+  top: -1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .grow_blue-box {
   display: -webkit-box;
