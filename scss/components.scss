@@ -1,0 +1,358 @@
+.h2 {
+    font-size: 36px;
+    font-family: "Uni Neue Book";
+    line-height: 1.167;
+}
+
+.text {
+    font-size: 16px;
+    font-family: "Uni Neue";
+    line-height: 1.5;      
+}
+
+.text-bold {
+    font-weight: 800;
+}
+
+.small-text {
+    font-size: 14px;
+    line-height: 1.714;
+}
+
+.text-blue {
+    color: rgb(43, 206, 255);
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.line {
+    background-color: rgb(108, 134, 255);
+    width: 20px;
+    height: 3px;
+    margin-bottom: 20px;
+}
+
+.line-white {
+    background-color: #fff;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 20px;
+}
+  
+.line-inline {
+    display: inline-block;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+.z-index15 {
+    position: relative;
+    z-index: 15;
+}
+
+.block_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    .line {
+        margin-bottom: 3px;
+    }
+}
+
+.block_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    margin: 45px 0;
+    img {
+        margin-bottom: 6px;
+    }
+}
+
+.list-blue-dots {
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    li {
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 18px;
+    }
+
+    li::before {
+        content: "";
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        background: url(../images/dot-blue.png) no-repeat center;
+        background-size: 100%;
+        margin-right: 8px;
+        position: absolute;
+        left: 0;
+        top: 7.2px;
+    }
+    .alert-item::before {
+        background: url(../images/alert.png) no-repeat center;
+        width: 75px;
+        height: 75px;
+        z-index: -1;
+        top: -18px;
+        left: -42px;
+    }
+}
+
+.list-white-dots {
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    li {
+        margin-bottom: 12px;
+        position: relative;
+        padding-left: 18px;
+    }
+
+    li::before {
+        content: "";
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        background: url(../images/dot-white.png) no-repeat center;
+        background-size: 100%;
+        margin-right: 8px;
+        position: absolute;
+        left: 0;
+        top: 7.2px;
+    }
+}
+
+.inline-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_block {
+    text-align: left;
+    > .text {
+        margin-bottom: 20px;
+    }
+}
+
+.card-right {
+    display: flex;
+    align-items: center;
+    .img-wrapper {
+        padding: 7px;
+        display: block;
+        background-color: #fff;
+        border-radius: 6px;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-block {
+        margin-left: 15px;
+    }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.card-white {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    .img-wrapper {
+        padding: 7px;
+        display: block;
+        background-color: #fff;
+        border-radius: 6px;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 9px 29.76px 2.24px rgba(0, 4, 2, 0.14);
+    }
+    .text-block {
+        // font-size: 18px;
+        margin-left: 15px;
+    }
+}
+
+.card-regular {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin: 80px 0 25px 0;
+    color: #000;
+    .img-wrapper {
+        padding: 7px;
+        display: block;
+        background-color: #5F87FF;
+        border-radius: 6px;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 9px 29.76px 2.24px rgba(0, 4, 2, 0.14);
+    }
+    .text-block {
+        // font-size: 18px;
+        margin-left: 15px;
+    }
+}
+
+// Text
+b, strong, .text-bold {
+    font-weight: 800;
+}
+
+.text-blue {
+    color: #7C9CFF;
+}
+
+.text-red {
+    color: #F01C1C;
+}
+
+.text-green {
+    color: #00B200;
+}
+
+.text-light-gray {
+    color: #C2C2C2;
+}
+
+.not-bold {
+    font-weight: 500;
+}
+
+.line {
+    display: block;
+    max-width: 20px;
+    // height: auto;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.margin-bottom-35 {
+    margin-bottom: 35px;
+}
+
+.text-margin {
+    margin-bottom: 30px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    // font-size: 16px;
+    // line-height: 1.875;
+    // text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: 30px;
+    font-family: "Uni Neue";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+}
+  
+.img-card-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 34px 31.85px 3.15px rgba(0, 4, 2, 0.1);
+    padding: 6px;
+    border-radius: 6px;
+    .up-to {
+        position: absolute;
+        color: #fff;
+        padding: 20px 15px;
+        bottom: -25px;
+        border-radius: 6px;
+        background-color: rgb(108, 134, 255);
+        box-shadow: 0px 19px 21px 0px rgba(0, 4, 2, 0.24);
+        font-size: 24px;
+        font-family: "Uni Neue Heavy";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 0.833;
+        text-align: center;
+        display: block;
+        font-weight: bolder;
+    }
+}
+
+.youtube-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.youtube-block::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 54px;
+    height: 42px;
+    display: block;
+    background: url('../images/youtube_btn.png') no-repeat;
+    background-size: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-30 {
+    margin: 30px 0;
+}
+
+@media screen and (max-width: 720px) {
+    .inline-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .inline-list {
+        flex-direction: column;
+        padding-left: 20px;
+
+        .alert-item {
+            padding-left: 30px;
+        }
+
+        .alert-item::before {
+            left: -30px;
+        }
+    }
+}

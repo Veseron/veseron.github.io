@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'mixin';
 @import 'colors';
+@import 'backgrounds';
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,9 @@
 
 html{
     height: 100%;
+    @include mobile{
+        overflow-x: hidden !important;
+    }
 }
 
 a{
@@ -16,8 +20,12 @@ a{
     transition: .3s ease-in-out;
 }
 
+h2{
+    font-family: 'UniNeueRegular', sans-serif !important;
+}
+
 body{
-    font-family: 'UniNeueRegular', sans-serif;
+    font-family: 'UniNeueRegular', sans-serif !important;
 }
 
 img{
@@ -56,6 +64,11 @@ img{
 .textAlign_Start{
     text-align: start;
 }
+
+.textAlign_End{
+    text-align: end;
+}
+
 
 .textAlign_Center{
     text-align: center;
@@ -314,6 +327,8 @@ img{
 //     }
 // }
 
+
+
 .yandexParallax{
     max-width: 500px !important;
     @include m-desk{
@@ -348,6 +363,10 @@ img{
     }
 }
 
+
+.start {
+    margin-top: 0 !important;
+}
 
 .start_img{
     top: 350px;
@@ -505,6 +524,13 @@ img{
     }
 }
 
+.azbuka_howBlock{
+    @include mobile{
+        min-height: 50rem;
+        padding-top: 80px !important;
+    }
+}
+
 .howBlock_el{
     @include mobile{
         flex-direction: column;
@@ -628,6 +654,7 @@ img{
 
 .infoBlock{
     padding-top: 0px;
+    margin-top: 150px;
     padding-left: 40px;
     padding-right: 40px;    
     padding-bottom: 40px;
@@ -664,9 +691,9 @@ img{
         margin: 8px;
     }
     @include mobile{
-        width: 45px;
-        height: 1px;
-        margin: 10px;
+        width: 20px;
+        height: 3px;
+        margin: 12px 0;
     }
 }
 
@@ -686,8 +713,8 @@ img{
         line-height: 18px;
     }
     @include mobile{
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
@@ -698,6 +725,7 @@ img{
 
 .fullscreenimg{
     margin: auto;
+    max-width: 1200px;
      @include m-desk{
         max-width: 1050px;
     }
@@ -723,7 +751,8 @@ img{
         font-size: 17px;
     }
     @include mobile{
-        font-size: 16px;
+        font-size: 24px;
+        line-height: 25px;
     }
 }
 
@@ -783,7 +812,7 @@ img{
 .adv_Txt{
     margin-top: auto;
     line-height: 30px;
-    margin-bottom: auto;
+    margin-bottom: auto !important;
     font-size: 17px;
     @include m-desk{
         line-height: 18px;
@@ -923,8 +952,62 @@ img{
             font-size: 10px;
         }
         @include mobile{
-            font-size: 9px;
+            font-size: 11px;
         }
+    }
+}
+
+.yandex_connectInfo{
+    img{
+        max-width: 900px;
+        @include m-desk{
+            max-width: 700px;
+        }
+        @include sm-desk{
+            max-width: 600px;
+        }
+        @include tablet{
+            max-width: 500px;
+        }
+        @include mobile{
+            max-width: 280px;
+        }
+    }
+}
+
+.yandexRow{
+    margin: auto;
+    img{
+        margin: auto;
+        max-width: 500px;
+        @include mobile{
+            max-width: 280px !important;
+            margin: 10px;
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.maxWidth_50Proc{
+    max-width: 50% !important;
+}
+
+.title_ya{
+    color: $black;
+    font-size: 15px;
+    @include m-desk{
+        font-size: 14px;
+    }
+    @include sm-desk{
+        font-size: 10px;
+    }
+    @include tablet{
+        font-size: 10px;
+    }
+    @include mobile{
+        font-size: 11px;
     }
 }
 
@@ -938,6 +1021,7 @@ img{
         margin-right: 0px;
     }
 }
+
 
 .dateLine_ul{
     @include tablet{
@@ -1004,7 +1088,8 @@ img{
     @include mobile{
         margin: auto 0;
         // margin-right: auto;
-        font-size: 9px;
+        line-height: 17px;
+        font-size: 11px;
     }
     // line-height: 20px;
 }
@@ -1291,6 +1376,7 @@ img{
 }
 .auto_img{
     height: auto !important;
+    max-width: 350px;
     @include m-desk{
         max-width: 300px;
     }
@@ -1689,7 +1775,7 @@ img{
     }
     @include mobile{
         margin-top: 80px;
-        font-size: 18px;
+        font-size: 24px;
         color: $black !important; 
         text-align: center;
     }
@@ -1715,6 +1801,8 @@ img{
     @include mobile{
         text-align: center;
         color: $black !important; 
+        line-height: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -1793,6 +1881,10 @@ img{
 
 .mainInfo{
     margin-top: 100px;
+}
+
+.members{
+    margin-bottom: 100px;
 }
 
 .members_rowBlock{
@@ -1965,4 +2057,159 @@ img{
 .integrate_ell2{
     top: 30rem;
     right: -10rem; 
+}
+
+.azbukaMob_container{
+    @include mobile{
+        top: 25%;
+    }
+}
+
+.backgroundCat::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../img/pictures/block_9_bg_cat.png) no-repeat;
+    background-size: 100%;
+    width: 474px;
+    height: 515px;
+    bottom: 10px;
+    right: -200px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 720px) {
+    .bg8-1::before {
+        content: none;
+        display: none;
+    }
+}
+
+@media (max-width: 575px){
+.block_6_text_2_wrap:before {
+    content: "";
+    display: block;
+    background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/block_6_text_2_img.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -500px;
+    left: -155%;
+    width: 950px;
+    height: 956px;
+    visibility: initial;
+}}
+
+.block_4:before {
+    content: "";
+    display: block;
+    background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/block_4_bg_1.png) no-repeat center;
+    width: 100%;
+    max-width: 2070px;
+    height: 1160px;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    right: 0;
+    bottom: -50px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+@media (max-width: 575px){
+.block_4:before {
+    top: 150px;
+    background-size: 330% !important;
+    background-position: top center;
+    visibility: initial;
+}
+}
+
+.block_4_kiselev {
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.block_4_kiselev:before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 322px;
+    background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/block_4_bg_2.png) no-repeat top center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: -350px;
+}
+
+@media (max-width: 575px){
+.block_4_kiselev:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 140px;
+    background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/block_4_bg_2.png) no-repeat top center;
+    background-size: 100%;
+    position: absolute;
+    top: -140px;
+    left: -50px;
+    visibility: initial;
+}
+}
+
+
+// same blocks
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+@media screen and (max-width: 720px) {
+    .block_11 {
+        margin-top: 210px;
+        .bg11-1 {
+            .col-12:last-child {
+                padding-left: 0;
+            }
+        }
+    }
+    .part2 {
+        display: none !important;
+    }
+
+    .block_2 {
+        .block_2_items {
+            padding: 0 15px!important;
+        }
+    }
+
+    .block_3 {
+        .block_3_items {
+            padding: 0 15px;
+        }
+    }
+
 }

@@ -1,0 +1,435 @@
+.block_3::before {
+    content: "";
+    display: block;
+    background: url(../images/ellipse-background.png) no-repeat center;
+    width: 100%;
+    max-width: 2070px;
+    height: 1160px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+@media (max-width: 575px)
+{
+    .block_3::before {
+        top: 570px;
+        background-size: 330% !important;
+        background-position: top center;
+        visibility: initial;
+    }
+}
+@media (max-width: 767px)
+{
+    .block_3::before {
+        bottom: 0;
+        height: 690px;
+    }
+}
+@media (max-width: 991px)
+{
+    .block_3::before {
+        bottom: 0;
+        height: 830px;
+    }
+}
+@media (max-width: 1199px)
+{
+    .block_3::before {
+        background-size: cover;
+        width: 100%;
+        max-width: 1660px;
+        height: 930px;
+    }
+}
+
+
+.slider-iphone::before {
+    content: "";
+    display: block;
+    background: url(../images/double-ellipse1.png) no-repeat;
+    position: absolute;
+    top: -100px;
+    right: -42%;
+    width: 555px;
+    height: 650px;
+    z-index: -1;
+}
+@media (max-width: 575px)
+{
+    .slider-iphone::before {
+        content: "";
+        display: block;
+        background: url(../images/double-ellipse1.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        right: -25vw;
+        width: 233px;
+        height: 270px;
+    }
+}
+@media (max-width: 767px)
+{
+    .slider-iphone::before {
+        visibility: hidden;
+    }
+
+}
+
+.block_5 {
+    .row:first-child {
+        position: relative;
+    }
+    .row:first-child::before {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: -1;
+        background: url(../images/background5-1.png) no-repeat;
+        background-size: 100%;
+        left: -52.5%;
+        width: 1310px;
+        height: 724px;
+        top: -165px;
+    }
+}
+
+.bg5-1 {
+    position: relative;
+}
+
+.bg5-1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/bg5-2.png) no-repeat;
+    background-size: 100%;
+    width: 876px;
+    height: 757px;
+    z-index: -1;
+    right: -20%;
+    bottom: -175px;
+}
+
+.bg5-2 {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.bg5-2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    background: url(../images/bg5-3.png) no-repeat;
+    background-size: 100%;
+    left: -30%;
+    top: 35px;
+    width: 645px;
+    height: 569px;
+}
+
+.bg7-1 {
+    color: #fff;
+    position: relative;
+    padding-top: 240px;
+    padding-bottom: 75px;
+}
+.bg7-1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/bg7-1.png) no-repeat;
+    background-size: 100%;
+    width: 2306px;
+    height: 1086px;
+    top: 0;
+    left: -65%;
+    z-index: -1;
+}
+.bg7-1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/bg7-1-2.png) no-repeat;
+    background-size: 100%;
+    width: 325px;
+    height: 302px;
+    bottom: 100px;
+    right: -150px;
+    z-index: 10;
+}
+.bg8-1 {
+    position: relative;
+    padding-bottom: 60px;
+}
+.bg8-1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/harold.png) no-repeat;
+    background-size: 100%;
+    width: 474px;
+    height: 515px;
+    bottom: 10px;
+    right: -20px;
+    z-index: 10;
+}
+
+.bg8-2 {
+    color: #fff;
+    position: relative;
+    padding-bottom: 160px;
+    padding-top: 120px;
+}
+
+.bg8-2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/bg8-2.png) no-repeat;
+    background-size: 100%;
+    width: 2019px;
+    height: 1101px;
+    top: -55px;
+    left: -43%;
+    z-index: -1;
+}
+
+.bg8-3 {
+    position: relative;
+}
+
+.bg8-3::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    background: url(../images/bg8-3.png) no-repeat;
+    background-size: 100%;
+    width: 236px;
+    height: 253px;
+    bottom: 95px;
+    left: -100px;
+}
+
+.bg8-4 {
+    position: relative;
+}
+
+.bg8-4::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/bg8-4.png) no-repeat;
+    background-size: 100%;
+    width: 2363px;
+    height: 1668px;
+    top: -125px;
+    left: -62%;
+    z-index: -1;
+}
+
+.bg8-5 {
+    position: relative;
+}
+
+.bg8-5::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/vjuh.png) no-repeat;
+    background-size: 100%;
+    z-index: -1;
+    width: 515px;
+    height: 444px;
+    bottom: -75px;
+    right: 0;
+}
+
+.bg8-6 {
+    position: relative;
+}
+
+.bg8-6::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../images/bg8-6.png) no-repeat;
+    background-size: 100%;
+    width: 418px;
+    height: 613px;
+    z-index: -1;
+    bottom: 55px;
+    right: -250px;
+}
+
+.bg11-1 {
+    position: relative;
+}
+
+.bg11-1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -10;
+    background: url(../images/bg11-1.png) no-repeat;
+    background-size: 100%;
+    width: 1685px;
+    height: 700px;
+    top: -152px;
+    left: -35%;
+}
+
+.bg11-1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    background: url(../images/bg11-2.png) no-repeat;
+    background-size: 100%;
+    width: 645px;
+    height: 581px;
+    top: -157px;
+    left: -10px;
+    transform: rotate(0.7deg);
+}
+
+.bg12-1 {
+    position: relative;
+}
+
+.bg12-1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background: url(../images/bg12-1.png) no-repeat;
+    background-size: 100%;
+    width: 495px;
+    height: 481px;
+    right: -120px;
+    top: -90px;
+}
+
+.bg13-1 {
+    position: relative;
+}
+
+.bg13-1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background: url(../images/bg13-1.png) no-repeat;
+    background-size: 100%;
+    width: 2738px;
+    height: 1009px;
+    top: -130px;
+    right: -75%;
+}
+
+.bg12-2 {
+    position: relative;
+}
+
+.bg12-2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -1;
+    background: url(../images/bg12-2.png) no-repeat;
+    background-size: 100%;
+    width: 548px;
+    height: 439px;
+    left: -90%;
+    left: -50%;
+    top: 45%;
+}
+
+@media screen and (max-width: 720px) {
+    .bg8-1::before {
+        content: none;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .block_5 .row:first-child {
+        .line {
+            background-color: #fff;
+        }
+        color: #fff;
+        &::before {
+            top: -126px;
+        }
+    }
+
+    .bg5-1 {
+        &::before {
+            content: none;
+        }
+    }
+
+    .bg5-2 {
+        &::before {
+            content: none;
+        }
+    }
+
+    .bg7-1 {
+        &::before {
+            left: -175%;
+        } 
+    }
+
+    .bg8-2 {
+        padding-top: 50px;
+        padding-bottom: 0;
+        &::before {
+            left: -135%;
+        }
+    }
+
+    .card-regular {
+        margin-top: 20px;
+    }
+
+    .bg8-6 {
+        &::before {
+            content: none;
+        }
+    }
+    main.keromag .block_11 .bg11-1 .col-12:last-child {
+        padding-left: 15px!important;
+    }
+    .bg11-1::before {
+        left: initial;
+        right: -169px;
+    }
+    .bg11-1::after {
+        content: none;
+    }
+    .bg12-1::before {
+        content: none;
+    }
+    .bg13-1 {
+        &::before {
+            right: initial;
+            top: -194px;
+            left: -541px;
+        }
+    }
+    .block_4 {
+        .slider-iphone .row::before {
+            left: 0!important;
+        }
+        .slider-iphone .row::after {
+            right: 0!important;
+        }
+    }
+}
