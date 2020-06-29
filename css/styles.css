@@ -686,6 +686,18 @@ b, strong, .text-bold {
   font-family: 'UniNeueRegular';
   src: url("../fonts/UniNeueRegular.ttf"); }
 
+@font-face {
+  font-family: 'Uni Neue Book';
+  src: url("../fonts/UniNeueBook-Italic.eot");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Uni Neue';
+  src: url("../fonts/UniNeueRegular.eot");
+  font-weight: 500;
+  font-style: normal; }
+
 @import url("../css/fonts/Uni/stylesheet.css");
 body {
   font-family: "Uni Neue";
@@ -1857,6 +1869,18 @@ main.keromag .no-padding {
   font-family: 'UniNeueRegular';
   src: url("../fonts/UniNeueRegular.ttf"); }
 
+@font-face {
+  font-family: 'Uni Neue Book';
+  src: url("../fonts/UniNeueBook-Italic.eot");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Uni Neue';
+  src: url("../fonts/UniNeueRegular.eot");
+  font-weight: 500;
+  font-style: normal; }
+
 .block_3::before {
   content: "";
   display: block;
@@ -2810,7 +2834,7 @@ img {
   font-size: 17px; }
   @media screen and (min-width: 1281px) and (max-width: 1550px) {
     .infoBlock_txtInfo {
-      font-size: 12px;
+      font-size: 16px;
       line-height: 18px; } }
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .infoBlock_txtInfo {
@@ -2847,7 +2871,7 @@ img {
 
 @media screen and (min-width: 1281px) and (max-width: 1550px) {
   .infoBlock_phrase {
-    font-size: 20px; } }
+    font-size: 36px; } }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .infoBlock_phrase {
@@ -4153,6 +4177,10 @@ img {
     top: -140px;
     left: -50px;
     visibility: initial; } }
+
+@media screen and (max-width: 567px) {
+  .text {
+    font-size: 14px; } }
 
 @media screen and (max-width: 720px) {
   .block_11 {

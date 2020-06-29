@@ -28,6 +28,8 @@ body{
     font-family: 'UniNeueRegular', sans-serif !important;
 }
 
+
+
 img{
     height: auto;
 }
@@ -701,7 +703,7 @@ img{
     line-height: 30px;
     font-size: 17px;
     @include m-desk{
-        font-size: 12px;
+        font-size: 16px;
         line-height: 18px;
     }
     @include sm-desk{
@@ -742,7 +744,7 @@ img{
 
 .infoBlock_phrase{
     @include m-desk{
-        font-size: 20px;
+        font-size: 36px;
     }
     @include sm-desk{
         font-size: 17px;
@@ -2157,7 +2159,7 @@ img{
 }
 }
 
-
+@media screen and (max-width: 567px) {.text {font-size: 14px}}
 // same blocks
 //
 //
