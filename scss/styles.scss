@@ -35,8 +35,6 @@ img{
 }
 
 
-
-
 .displayFlex_Column{
     display: flex;
     flex-direction: column;
@@ -149,6 +147,7 @@ img{
 .fontStyle_italic{
     font-style: italic;
 }
+
 
 .content1{
     position: relative;
@@ -425,13 +424,13 @@ img{
 
 .dateLine_txt{
     @include sm-desk{
-        font-size: 20px !important ;
+        font-size: 24px !important ;
     }
     @include tablet {
-        font-size: 20px !important ;
+        font-size: 24px !important ;
     }
     @include mobile {
-        font-size: 16px !important ;
+        font-size: 22px !important ;
         text-align: center;
     }
 }
@@ -441,7 +440,7 @@ img{
         font-size: 14px !important ;
     }
     @include mobile {
-        font-size: 12px !important ;
+        font-size: 14px !important ;
         margin-bottom: 5px !important;
     }
 }
@@ -497,34 +496,34 @@ img{
 // }
 
 
-.howBlock{
-    background-image: url('../img/pictures/howImg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    min-height: 120vh;
-    padding-top: 190px !important;
-    @include m-desk{
-        min-height: 120vh;
-        padding-top: 180px !important;
-    }
-    @include sm-desk{
-        background-size: cover;
-        min-height: 45rem;
-        padding-top: 140px !important;
-    }
-    @include tablet{
-        background-size: cover;
-        min-height: 95vh;
-        padding-top: 140px !important;
-    }
-    @include mobile{
-        background-size: cover;
-        min-height: 95rem;
-        padding-top: 60px !important;
-        padding-bottom: 0px !important;
-    }
-}
+// .howBlock{
+//     background-image: url('../img/pictures/howImg.png');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: contain;
+//     min-height: 120vh;
+//     padding-top: 190px !important;
+//     @include m-desk{
+//         min-height: 120vh;
+//         padding-top: 180px !important;
+//     }
+//     @include sm-desk{
+//         background-size: cover;
+//         min-height: 45rem;
+//         padding-top: 140px !important;
+//     }
+//     @include tablet{
+//         background-size: cover;
+//         min-height: 95vh;
+//         padding-top: 140px !important;
+//     }
+//     @include mobile{
+//         background-size: cover;
+//         min-height: 95rem;
+//         padding-top: 60px !important;
+//         padding-bottom: 0px !important;
+//     }
+// }
 
 .azbuka_howBlock{
     @include mobile{
@@ -533,11 +532,11 @@ img{
     }
 }
 
-.howBlock_el{
-    @include mobile{
-        flex-direction: column;
-    }
-}
+// .howBlock_el{
+//     @include mobile{
+//         flex-direction: column;
+//     }
+// }
 
 .howBlock_icon{
     margin: 10px;
@@ -656,7 +655,7 @@ img{
 
 .infoBlock{
     padding-top: 0px;
-    margin-top: 150px;
+    // margin-top: 150px;
     padding-left: 40px;
     padding-right: 40px;    
     padding-bottom: 40px;
@@ -859,22 +858,23 @@ img{
 
 .blueBar_txt{
     margin: 27px;
+    font-size: 14px;
     @include m-desk{
-        margin: 10px;
+        margin: 15px;
         font-size: 12px;
     }
     @include sm-desk{
-        margin: 10px;
-        font-size: 10px;
+        margin: 15px;
+        font-size: 12px;
     }
     @include tablet{
-        margin: 10px;
-        font-size: 10px;
+        margin: 15px;
+        font-size: 12px;
     }
     @include mobile{
         line-height: 18px;
-        margin: 5px;
-        font-size: 8px;
+        margin: 10px;
+        font-size: 12px;
     }
 }
 
@@ -931,30 +931,30 @@ img{
     }
     @include mobile{
         margin-top: 10px;
-        max-width: 35%;
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
     li{
         color: $blueLine;
         @include mobile{
-            font-size: 12px;
+            font-size: 14px;
         }
     }
     & span{
         color: $black;
         font-size: 15px;
         @include m-desk{
-            font-size: 14px;
+            font-size: 16px;
         }
         @include sm-desk{
-            font-size: 10px;
+            font-size: 14px;
         }
         @include tablet{
-            font-size: 10px;
+            font-size: 14px;
         }
         @include mobile{
-            font-size: 11px;
+            font-size: 14px;
         }
     }
 }
@@ -1052,16 +1052,18 @@ img{
         flex-direction: row;
     }
     @include mobile {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
 .containerDesc2{
     @include tablet{
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
     @include mobile{
-        width: 100%;
+        width: 50%;
+        margin: auto;
     }
 }
 
@@ -1070,7 +1072,7 @@ img{
         width: 50%;
     }
     @include mobile{
-        width: 50%;
+        width: 80%;
     }
 }
 
@@ -1092,6 +1094,7 @@ img{
         // margin-right: auto;
         line-height: 17px;
         font-size: 11px;
+        text-align: center;
     }
     // line-height: 20px;
 }
@@ -1264,16 +1267,16 @@ img{
 
 .title-reg{
     @include m-desk{
-        font-size: 14px;
+        font-size: 16px;
     }
     @include sm-desk{
-        font-size: 10px;
+        font-size: 140px;
     }
     @include tablet{
-        font-size: 10px;
+        font-size: 14px;
     }
     @include mobile{
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
@@ -1424,21 +1427,21 @@ img{
     margin-bottom: 60px;
     @include m-desk{
         margin-bottom: 50px;
-        font-size: 12px;
+        font-size: 16px;
     }
     @include sm-desk{
         margin-bottom: 40px;
-        font-size: 10px;
+        font-size: 14px;
     }
     @include tablet{
         margin-bottom: 20px;
         text-align: center;
-        font-size: 10px;
+        font-size: 14px;
     }
     @include mobile{
         margin-bottom: 20px;
         text-align: center;
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
@@ -1589,23 +1592,24 @@ img{
         margin:  40px 40px 10px ;
     }
     @include mobile{
-        font-size: 14px;
+        font-size: 18px;
         margin:  40px 40px 10px ;
     }
 }
 
 .growth_TagBlue{
+    font-size: 16px;
     @include m-desk{
-        font-size: 12px;
+        font-size: 16px;
     }
     @include sm-desk{
-        font-size: 10px;
+        font-size: 14px;
     }
     @include tablet{
-        font-size: 10px;
+        font-size: 14px;
     }
     @include mobile{
-        font-size: 9px;
+        font-size: 14px;
     }
 }
 
@@ -1836,6 +1840,7 @@ img{
     background-position: top;
     background-size: contain;
     min-height: 10vh;
+    color: $white;
     padding-top: 190px !important;
     @include m-desk{
         min-height: 120vh;
@@ -1928,16 +1933,16 @@ img{
 .member_name{
     font-size: 35px !important;
     @include m-desk{
-        font-size: 25px !important;
+        font-size: 27px !important;
     }
     @include sm-desk{
-        font-size: 20px !important;
+        font-size: 22px !important;
     }
     @include tablet{
-        font-size: 20px !important;
+        font-size: 22px !important;
     }
     @include mobile{
-        font-size: 18px !important;
+        font-size: 20px !important;
     }
 }
 
@@ -2078,6 +2083,40 @@ img{
     bottom: 10px;
     right: -200px;
     z-index: 10;
+    @include m-desk{
+        right: -80px;
+        width: 374px;
+        height: 415px;
+    }
+    @include sm-desk{
+        right: -60px;
+        width: 324px;
+        height: 345px;
+    }
+}
+
+.bg8-1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../images/harold.png) no-repeat;
+    background-size: 100%;
+    width: 474px;
+    height: 515px;
+    bottom: 10px;
+    right: -20px;
+    z-index: 10;
+    @include m-desk{
+        right: 100px;
+        width: 374px;
+        height: 415px;
+    }
+    @include sm-desk{
+        right: 70px;
+        bottom: 40px;
+        width: 324px;
+        height: 345px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -2100,6 +2139,37 @@ img{
     height: 956px;
     visibility: initial;
 }}
+
+
+.block3_2Rows_item{
+    margin: auto;
+    @include mobile{
+        margin: 20px 0 !important;
+    }
+}
+
+.block3_2Rows::before{
+    bottom: -200px;
+    @include sm-desk{
+        bottom: -100px;
+    }
+}
+.block3_3Rows::before {
+    @include sm-desk{
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 575px){
+.block_3_item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0px 21px 58.46px 20.54px rgba(0, 4, 2, 0.09);
+}
+}
+
 
 .block_4:before {
     content: "";
@@ -2159,6 +2229,26 @@ img{
 }
 }
 
+.last-childNomargin{
+    @media screen and (min-width: 991px){
+        margin-top: 0px !important;
+    }
+}
+
+.item-title_common{
+    max-width: 800px;
+    padding: 15px 0;
+    .text{
+        padding: 5px;
+    }
+    .img-fluid {
+        @include mobile{
+            max-width: 60px;
+        }
+    }
+}
+
+
 @media screen and (max-width: 567px) {.text {font-size: 14px}}
 // same blocks
 //
@@ -2188,6 +2278,58 @@ img{
 //
 
 
+.block_3 {
+    position: relative;
+    margin-top: 90px;
+    color: #fff;
+
+    .block_title {
+        z-index: 3;
+    }
+
+    .block_3_items {
+        margin-top: 80px;
+    }
+      
+    .block_3_item {
+        z-index: 3;
+
+        .item-title {
+            display: flex;
+            align-items: center;
+            .img-wrapper {
+                padding: 7px;
+                display: block;
+                background-color: #fff;
+                border-radius: 6px;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .text {
+                font-size: 18px;
+                font-weight: 900;
+                margin-left: 15px;
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style: none;
+                padding: 8px;
+                font-size: 16px;
+                background: url(../images/arrow-circle.png) no-repeat center left;
+                background-size: 20px;
+                padding-left: 35px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 720px) {
     .block_11 {
@@ -2214,4 +2356,38 @@ img{
         }
     }
 
+}
+
+.block_11 {
+    margin-top: 210px;
+}
+
+.argo2{
+    color: $white;
+    @include mobile {
+        color: $black;
+        text-align: center;
+    }
+    .line-white{
+        @include mobile {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.argo2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -10;
+    background: url('../img/pictures/ad-set-ell.png') no-repeat;
+    background-size: 100%;
+    width: 1685px;
+    height: 1000px;
+    top: -152px;
+    left: -35%;
+}
+.argo2::after {
+    display: none;
 }
