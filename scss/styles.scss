@@ -746,10 +746,10 @@ img{
         font-size: 36px;
     }
     @include sm-desk{
-        font-size: 17px;
+        font-size: 30px;
     }
     @include tablet{
-        font-size: 17px;
+        font-size: 24px;
     }
     @include mobile{
         font-size: 24px;
@@ -957,6 +957,10 @@ img{
             font-size: 14px;
         }
     }
+}
+
+.yandex{
+    margin-top: 200px;
 }
 
 .yandex_connectInfo{
@@ -1270,7 +1274,7 @@ img{
         font-size: 16px;
     }
     @include sm-desk{
-        font-size: 140px;
+        font-size: 14px;
     }
     @include tablet{
         font-size: 14px;
@@ -2072,28 +2076,6 @@ img{
     }
 }
 
-.backgroundCat::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background: url(../img/pictures/block_9_bg_cat.png) no-repeat;
-    background-size: 100%;
-    width: 474px;
-    height: 515px;
-    bottom: 10px;
-    right: -200px;
-    z-index: 10;
-    @include m-desk{
-        right: -80px;
-        width: 374px;
-        height: 415px;
-    }
-    @include sm-desk{
-        right: -60px;
-        width: 324px;
-        height: 345px;
-    }
-}
 
 .bg8-1::before {
     content: "";
@@ -2119,12 +2101,36 @@ img{
     }
 }
 
-@media screen and (max-width: 720px) {
-    .bg8-1::before {
-        content: none;
-        display: none;
+.backgroundCat::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(../img/pictures/block_9_bg_cat.png) no-repeat;
+    background-size: 100%;
+    width: 374px;
+    height: 515px;
+    bottom: -50px;
+    right: -60px;
+    z-index: 10;
+    @include m-desk{
+        right: -80px;
+        width: 374px;
+        height: 415px;
+    }
+    @include sm-desk{
+        right: -60px;
+        width: 324px;
+        height: 345px;
     }
 }
+
+
+// @media screen and (max-width: 720px) {
+//     .bg8-1::before {
+//         content: none;
+//         display: none;
+//     }
+// }
 
 @media (max-width: 575px){
 .block_6_text_2_wrap:before {
@@ -2387,6 +2393,9 @@ img{
     height: 1000px;
     top: -152px;
     left: -35%;
+    @include sm-desk{
+        top: -152px;
+    }
 }
 .argo2::after {
     display: none;

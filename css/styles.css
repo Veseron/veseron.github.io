@@ -2840,11 +2840,11 @@ img {
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .infoBlock_phrase {
-    font-size: 17px; } }
+    font-size: 30px; } }
 
 @media screen and (min-width: 641px) and (max-width: 1024px) {
   .infoBlock_phrase {
-    font-size: 17px; } }
+    font-size: 24px; } }
 
 @media screen and (min-width: 300px) and (max-width: 640px) {
   .infoBlock_phrase {
@@ -3031,6 +3031,9 @@ img {
     @media screen and (min-width: 300px) and (max-width: 640px) {
       .connectInfo_cost span {
         font-size: 14px; } }
+
+.yandex {
+  margin-top: 200px; }
 
 .yandex_connectInfo img {
   max-width: 900px; }
@@ -3329,7 +3332,7 @@ img {
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .title-reg {
-    font-size: 140px; } }
+    font-size: 14px; } }
 
 @media screen and (min-width: 641px) and (max-width: 1024px) {
   .title-reg {
@@ -4066,28 +4069,6 @@ img {
   .azbukaMob_container {
     top: 25%; } }
 
-.backgroundCat::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background: url(../img/pictures/block_9_bg_cat.png) no-repeat;
-  background-size: 100%;
-  width: 474px;
-  height: 515px;
-  bottom: 10px;
-  right: -200px;
-  z-index: 10; }
-  @media screen and (min-width: 1281px) and (max-width: 1550px) {
-    .backgroundCat::before {
-      right: -80px;
-      width: 374px;
-      height: 415px; } }
-  @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .backgroundCat::before {
-      right: -60px;
-      width: 324px;
-      height: 345px; } }
-
 .bg8-1::before {
   content: "";
   position: absolute;
@@ -4111,10 +4092,27 @@ img {
       width: 324px;
       height: 345px; } }
 
-@media screen and (max-width: 720px) {
-  .bg8-1::before {
-    content: none;
-    display: none; } }
+.backgroundCat::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url(../img/pictures/block_9_bg_cat.png) no-repeat;
+  background-size: 100%;
+  width: 374px;
+  height: 515px;
+  bottom: -50px;
+  right: -60px;
+  z-index: 10; }
+  @media screen and (min-width: 1281px) and (max-width: 1550px) {
+    .backgroundCat::before {
+      right: -80px;
+      width: 374px;
+      height: 415px; } }
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .backgroundCat::before {
+      right: -60px;
+      width: 324px;
+      height: 345px; } }
 
 @media (max-width: 575px) {
   .block_6_text_2_wrap:before {
@@ -4301,6 +4299,9 @@ img {
   height: 1000px;
   top: -152px;
   left: -35%; }
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .argo2::before {
+      top: -152px; } }
 
 .argo2::after {
   display: none; }
