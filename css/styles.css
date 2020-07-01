@@ -4130,11 +4130,16 @@ img {
     content: none;
     display: none; } }
 
+.block_6_text_2_wrap:before {
+  content: "";
+  display: block;
+  background: url("../img/pictures/block_6_text_2_img.png") no-repeat; }
+
 @media (max-width: 575px) {
   .block_6_text_2_wrap:before {
     content: "";
     display: block;
-    background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/block_6_text_2_img.png) no-repeat;
+    background: url("../img/pictures/block_6_text_2_img.png") no-repeat;
     background-size: 100%;
     position: absolute;
     top: -500px;
@@ -4170,7 +4175,7 @@ img {
 .block_4:before {
   content: "";
   display: block;
-  background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/block_4_bg_1.png) no-repeat center;
+  background: url("../img/pictures/block_4_bg_1.png") no-repeat center;
   width: 100%;
   max-width: 2070px;
   height: 1160px;
@@ -4199,7 +4204,7 @@ img {
   display: block;
   width: 280px;
   height: 322px;
-  background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/block_4_bg_2.png) no-repeat top center;
+  background: url("../img/pictures/block_4_bg_2.png") no-repeat top center;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -4211,7 +4216,7 @@ img {
     display: block;
     width: 120px;
     height: 140px;
-    background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/block_4_bg_2.png) no-repeat top center;
+    background: url("../img/pictures/block_4_bg_2.png") no-repeat top center;
     background-size: 100%;
     position: absolute;
     top: -140px;
