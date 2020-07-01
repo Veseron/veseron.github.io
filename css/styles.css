@@ -3044,6 +3044,9 @@ img {
 
 .yandex {
   margin-top: 200px; }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .yandex {
+      margin-top: 120px; } }
 
 .yandex_connectInfo img {
   max-width: 900px; }
@@ -4153,6 +4156,12 @@ img {
     height: 956px;
     visibility: initial; } }
 
+.block_3 a {
+  color: white !important; }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .block_3 a {
+      color: #2D2D2D !important; } }
+
 .block3_2Rows_item {
   margin-left: auto;
   margin-right: auto; }
@@ -4216,6 +4225,12 @@ img {
   left: 0;
   top: -350px; }
 
+.kiselev {
+  background-color: #6c86ff;
+  border-radius: 30px;
+  padding: 15px;
+  box-shadow: 0 12px 32px rgba(117, 120, 130, 0.5); }
+
 @media (max-width: 575px) {
   .block_4_kiselev:before {
     content: "";
@@ -4276,13 +4291,55 @@ img {
       left: -35%; } }
 
 .seo_bad {
-  margin-top: 25%; }
+  margin-top: 10%; }
+
+.seo_bad2 {
+  margin-top: 20%; }
   @media screen and (min-width: 1281px) and (max-width: 1550px) {
-    .seo_bad {
-      margin-top: 40%; } }
+    .seo_bad2 {
+      margin-top: 30%; } }
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .seo_bad {
+    .seo_bad2 {
       margin-top: 40%; } }
+
+.RowBlock3 {
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.RowBlock5 {
+  justify-content: space-around;
+  flex-wrap: nowrap; }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .RowBlock5 {
+      flex-wrap: wrap; } }
+
+.firm_style {
+  max-width: 31.5%;
+  margin-top: 20px; }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .firm_style {
+      margin-top: 5px;
+      max-width: 48%; } }
+
+.firm_style2 {
+  max-width: 18%;
+  margin-top: 20px; }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .firm_style2 {
+      margin-top: 5px;
+      max-width: 48%; } }
+
+.seoBad_img {
+  max-width: 500px; }
+  @media screen and (min-width: 1281px) and (max-width: 1550px) {
+    .seoBad_img {
+      max-width: 400px; } }
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .seoBad_img {
+      max-width: 400px; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .seoBad_img {
+      max-width: 280px; } }
 
 .yandexRow_bad2 {
   margin: auto; }

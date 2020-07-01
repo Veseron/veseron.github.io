@@ -133,6 +133,7 @@ img{
     }
 }
 
+
 .left25proc{
     left: 25%;
 }
@@ -970,6 +971,9 @@ img{
 
 .yandex{
     margin-top: 200px;
+    @include mobile{
+        margin-top: 120px;
+    }
 }
 
 .yandex_connectInfo{
@@ -2165,10 +2169,19 @@ img{
     visibility: initial;
 }}
 
+.block_3{
+    a{
+        color: $white !important;
+        @include mobile {
+            color: $black !important;
+        }
+    }
+}
 
 .block3_2Rows_item{
     margin-left: auto;
     margin-right: auto;
+    
     @include mobile{
         margin: 20px 0 !important;
     }
@@ -2240,6 +2253,14 @@ img{
     bottom: 0;
     left: 0;
     top: -350px;
+}
+
+.kiselev{
+    background-color: $blueLine;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: 0 12px 32px rgba(117, 120, 130, 0.5);
+    
 }
 
 @media (max-width: 575px){
@@ -2335,15 +2356,62 @@ img{
 }
 
 .seo_bad{
-    margin-top: 25%;
+    margin-top: 10%;
+}
+.seo_bad2{
+    margin-top: 20%;
     @include m-desk{
-        margin-top: 40%;
+        margin-top: 30%;
     }
     @include sm-desk{
         margin-top: 40%;
     }
 }
 
+.RowBlock3{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.RowBlock5{
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    
+    @include mobile{
+        flex-wrap: wrap;
+    }
+}
+
+.firm_style{
+    max-width: 31.5%;
+    margin-top: 20px;
+    @include mobile{
+        margin-top: 5px;
+        max-width: 48%;
+    }
+}
+.firm_style2{
+    max-width: 18%;
+    margin-top: 20px;
+    @include mobile{
+        margin-top: 5px;
+        max-width: 48%;
+    }
+}
+
+
+.seoBad_img{
+    max-width: 500px;
+    @include m-desk{
+        max-width: 400px;
+    }
+    @include sm-desk{
+        max-width: 400px;
+    }
+    @include mobile{
+        max-width: 280px;
+    }
+}
 
 
 .yandexRow_bad2{
