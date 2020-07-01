@@ -19,8 +19,13 @@ a{
     text-decoration: none !important;
     transition: .3s ease-in-out;
 }
-
-h2{
+h1{
+    font-size: 30px;
+    @include mobile{
+        font-size: 14px;
+    }
+}
+h1, h2{
     font-family: 'UniNeueRegular', sans-serif !important;
 }
 
@@ -700,6 +705,7 @@ img{
 
 .infoBlock_txtInfo{
     line-height: 30px;
+    padding: 10px;
     font-size: 17px;
     @include m-desk{
         font-size: 16px;
@@ -796,17 +802,20 @@ img{
 }
 
 .adv_icon{
-    margin: 10px;
+    margin:  auto 10px;
     max-width: 90px;
-    height: auto;
+    height: 80px;
     @include m-desk{
         max-width: 80px;
+        height: 70px;
     }
     @include sm-desk{
         max-width: 70px;
+        height: 60px;
     }
     @include mobile{
         max-width: 70px;
+        height: 60px;
     }
 }
 
@@ -1082,6 +1091,7 @@ img{
 
 .descBlue{
     color: $blueLine;
+    padding: 5px ;
     @include m-desk{
         font-size: 12px;
     }
@@ -2125,12 +2135,12 @@ img{
 }
 
 
-// @media screen and (max-width: 720px) {
-//     .bg8-1::before {
-//         content: none;
-//         display: none;
-//     }
-// }
+@media screen and (max-width: 720px) {
+    .bg8-1::before {
+        content: none;
+        display: none;
+    }
+}
 
 @media (max-width: 575px){
 .block_6_text_2_wrap:before {
@@ -2160,11 +2170,13 @@ img{
         bottom: -100px;
     }
 }
-.block3_3Rows::before {
-    @include sm-desk{
-        bottom: 100px;
+
+
+@media screen and (max-width: 1280px) and (min-width: 1025px){
+    .block3_2Rows::before {
+        bottom: -200px;
     }
-}
+    }
 
 @media screen and (max-width: 575px){
 .block_3_item {
@@ -2254,6 +2266,125 @@ img{
     }
 }
 
+// .bad_img{
+//     max-width: 700px;
+//     height: auto;
+//     @include m-desk{
+//         max-width: 550px;
+//     }
+//     @include sm-desk{
+//         max-width: 450px;
+//     }
+//     @include tablet{
+//         max-width: 350px;
+//     }
+//     @include mobile{
+//         max-width: 250px;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }
+
+
+.bad{
+    color: $white;
+    @include mobile {
+        text-align: center;
+        .col-12:last-child {
+            padding-left: 0;
+            padding: 5px !important;
+        }
+    }
+    .line-white{
+        @include mobile {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.bad::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -10;
+    background: url('../img/pictures/ad-set-ell.png') no-repeat;
+    background-size: 100%;
+    width: 1685px;
+    height: 1000px;
+    top: -245px;
+    left: -27%;
+    @include sm-desk{
+        top: -250px;
+        left: -35%;
+    }
+    @include mobile{
+        top: -400px;
+        left: -35%;
+    }
+}
+
+.seo_bad{
+    margin-top: 25%;
+    @include m-desk{
+        margin-top: 40%;
+    }
+    @include sm-desk{
+        margin-top: 40%;
+    }
+}
+
+
+
+.yandexRow_bad2{
+    margin: auto;
+    img{
+        margin: auto;
+        max-width: 900px;
+        @include mobile{
+            max-width: 280px !important;
+            margin: 10px;
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+
+.bad::after {
+    display: none;
+}
+
+.argo2{
+    color: $white;
+    @include mobile {
+        color: $black;
+        text-align: center;
+    }
+    .line-white{
+        @include mobile {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.argo2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -10;
+    background: url('../img/pictures/ad-set-ell.png') no-repeat;
+    background-size: 100%;
+    width: 1685px;
+    height: 1000px;
+    top: -152px;
+    left: -35%;
+    @include sm-desk{
+        top: -152px;
+    }
+}
 
 @media screen and (max-width: 567px) {.text {font-size: 14px}}
 // same blocks
@@ -2337,6 +2468,7 @@ img{
     }
 }
 
+
 @media screen and (max-width: 720px) {
     .block_11 {
         margin-top: 210px;
@@ -2368,35 +2500,7 @@ img{
     margin-top: 210px;
 }
 
-.argo2{
-    color: $white;
-    @include mobile {
-        color: $black;
-        text-align: center;
-    }
-    .line-white{
-        @include mobile {
-            margin: auto;
-            margin-bottom: 20px;
-        }
-    }
-}
 
-.argo2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: -10;
-    background: url('../img/pictures/ad-set-ell.png') no-repeat;
-    background-size: 100%;
-    width: 1685px;
-    height: 1000px;
-    top: -152px;
-    left: -35%;
-    @include sm-desk{
-        top: -152px;
-    }
-}
 .argo2::after {
     display: none;
 }

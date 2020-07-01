@@ -2251,7 +2251,13 @@ a {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
 
-h2 {
+h1 {
+  font-size: 30px; }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    h1 {
+      font-size: 14px; } }
+
+h1, h2 {
   font-family: 'UniNeueRegular', sans-serif !important; }
 
 body {
@@ -2796,6 +2802,7 @@ img {
 
 .infoBlock_txtInfo {
   line-height: 30px;
+  padding: 10px;
   font-size: 17px; }
   @media screen and (min-width: 1281px) and (max-width: 1550px) {
     .infoBlock_txtInfo {
@@ -2883,18 +2890,21 @@ img {
       padding: 0; } }
 
 .adv_icon {
-  margin: 10px;
+  margin: auto 10px;
   max-width: 90px;
-  height: auto; }
+  height: 80px; }
   @media screen and (min-width: 1281px) and (max-width: 1550px) {
     .adv_icon {
-      max-width: 80px; } }
+      max-width: 80px;
+      height: 70px; } }
   @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .adv_icon {
-      max-width: 70px; } }
+      max-width: 70px;
+      height: 60px; } }
   @media screen and (min-width: 300px) and (max-width: 640px) {
     .adv_icon {
-      max-width: 70px; } }
+      max-width: 70px;
+      height: 60px; } }
 
 .adv_Txt {
   margin-top: auto;
@@ -3143,7 +3153,8 @@ img {
     width: 80%; } }
 
 .descBlue {
-  color: #6c86ff; }
+  color: #6c86ff;
+  padding: 5px; }
   @media screen and (min-width: 1281px) and (max-width: 1550px) {
     .descBlue {
       font-size: 12px; } }
@@ -4114,6 +4125,11 @@ img {
       width: 324px;
       height: 345px; } }
 
+@media screen and (max-width: 720px) {
+  .bg8-1::before {
+    content: none;
+    display: none; } }
+
 @media (max-width: 575px) {
   .block_6_text_2_wrap:before {
     content: "";
@@ -4139,9 +4155,9 @@ img {
     .block3_2Rows::before {
       bottom: -100px; } }
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .block3_3Rows::before {
-    bottom: 100px; } }
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+  .block3_2Rows::before {
+    bottom: -200px; } }
 
 @media screen and (max-width: 575px) {
   .block_3_item {
@@ -4215,6 +4231,92 @@ img {
     .item-title_common .img-fluid {
       max-width: 60px; } }
 
+.bad {
+  color: white; }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .bad {
+      text-align: center; }
+      .bad .col-12:last-child {
+        padding-left: 0;
+        padding: 5px !important; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .bad .line-white {
+      margin: auto;
+      margin-bottom: 20px; } }
+
+.bad::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -10;
+  background: url("../img/pictures/ad-set-ell.png") no-repeat;
+  background-size: 100%;
+  width: 1685px;
+  height: 1000px;
+  top: -245px;
+  left: -27%; }
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .bad::before {
+      top: -250px;
+      left: -35%; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .bad::before {
+      top: -400px;
+      left: -35%; } }
+
+.seo_bad {
+  margin-top: 25%; }
+  @media screen and (min-width: 1281px) and (max-width: 1550px) {
+    .seo_bad {
+      margin-top: 40%; } }
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .seo_bad {
+      margin-top: 40%; } }
+
+.yandexRow_bad2 {
+  margin: auto; }
+  .yandexRow_bad2 img {
+    margin: auto;
+    max-width: 900px; }
+    @media screen and (min-width: 300px) and (max-width: 640px) {
+      .yandexRow_bad2 img {
+        max-width: 280px !important;
+        margin: 10px; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .yandexRow_bad2 {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
+
+.bad::after {
+  display: none; }
+
+.argo2 {
+  color: white; }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .argo2 {
+      color: #2D2D2D;
+      text-align: center; } }
+  @media screen and (min-width: 300px) and (max-width: 640px) {
+    .argo2 .line-white {
+      margin: auto;
+      margin-bottom: 20px; } }
+
+.argo2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -10;
+  background: url("../img/pictures/ad-set-ell.png") no-repeat;
+  background-size: 100%;
+  width: 1685px;
+  height: 1000px;
+  top: -152px;
+  left: -35%; }
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .argo2::before {
+      top: -152px; } }
+
 @media screen and (max-width: 567px) {
   .text {
     font-size: 14px; } }
@@ -4276,32 +4378,6 @@ img {
 
 .block_11 {
   margin-top: 210px; }
-
-.argo2 {
-  color: white; }
-  @media screen and (min-width: 300px) and (max-width: 640px) {
-    .argo2 {
-      color: #2D2D2D;
-      text-align: center; } }
-  @media screen and (min-width: 300px) and (max-width: 640px) {
-    .argo2 .line-white {
-      margin: auto;
-      margin-bottom: 20px; } }
-
-.argo2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  z-index: -10;
-  background: url("../img/pictures/ad-set-ell.png") no-repeat;
-  background-size: 100%;
-  width: 1685px;
-  height: 1000px;
-  top: -152px;
-  left: -35%; }
-  @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .argo2::before {
-      top: -152px; } }
 
 .argo2::after {
   display: none; }
