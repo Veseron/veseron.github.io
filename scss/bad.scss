@@ -1,0 +1,105 @@
+
+@import 'fonts';
+@import 'mixin';
+@import 'colors';
+@import 'backgrounds';
+
+
+
+.bad{
+    color: $white;
+    @include mobile {
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        .col-12:last-child {
+            padding-left: 0;
+            padding: 5px !important;
+        }
+    }
+    .line-white{
+        @include mobile {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.bad::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: -10;
+    background: url('../img/pictures/ad-set-ell.png') no-repeat;
+    background-size: 100%;
+    width: 1685px;
+    height: 1000px;
+    top: -245px;
+    left: -27%;
+    @include sm-desk{
+        top: -250px;
+        left: -35%;
+    }
+    @include mobile{
+        top: -400px;
+        left: -35%;
+    }
+}
+
+.seo_bad{
+    margin-top: 10%;
+}
+.seo_bad2{
+    margin-top: 20%;
+    @include m-desk{
+        margin-top: 30%;
+    }
+    @include sm-desk{
+        margin-top: 40%;
+    }
+}
+
+
+
+.seoBad_img{
+    max-width: 500px;
+    @include m-desk{
+        max-width: 400px;
+    }
+    @include sm-desk{
+        max-width: 400px;
+    }
+    @include mobile{
+        max-width: 280px;
+    }
+}
+
+
+.yandexRow_bad2{
+    margin: auto;
+    img{
+        margin: auto;
+        max-width: 900px;
+        @include mobile{
+            max-width: 280px !important;
+            margin: 10px;
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+
+.bad::after {
+    display: none;
+}
+ @media screen and (max-width: 720px){
+      .adds_set {
+        margin-top: 150px !important;
+      }}
+
+    @media screen and (max-width: 720px){
+    .adds_set .bg11-1 .col-12:last-child {
+      padding-left: 15px;
+    }}

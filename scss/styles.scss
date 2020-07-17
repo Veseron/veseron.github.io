@@ -26,11 +26,11 @@ h1{
     }
 }
 h1, h2{
-    font-family: 'UniNeueRegular', sans-serif !important;
+    // font-family: 'Uni Neue Book', sans-serif !important;
 }
 
 body{
-    font-family: 'UniNeueRegular', sans-serif !important;
+    font-family: 'Uni Neue Book', sans-serif !important;
 }
 
 
@@ -39,11 +39,33 @@ img{
     height: auto;
 }
 
+.block_2_yt a {
+    position: relative;
+    display: inline-block;
+}
+.block_2_yt a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 45%;
+  top: 45%;
+  width: 52px;
+  height: 37px;
+  background: url(//mymarketolog.ru/wp-content/themes/my-marketolog/css/../img/youtube_btn.png) no-repeat center;
+  border-radius: 10px;
+}
 
+.block_2_yt a:before{
+left: 42%;
+top: 38%;
+width: 52px;
+height: 37px;
+}
 .displayFlex_Column{
     display: flex;
     flex-direction: column;
-    z-index: 100;
+    // z-index: 100;
 }
 
 .displayFlex_Row{
@@ -396,7 +418,6 @@ img{
     }
 }
 
-
 .dateLine{
     justify-content: space-around;
     @include tablet{
@@ -658,7 +679,11 @@ img{
     margin: auto;
 }
 
-
+.infoBlock_h1{
+    @include mobile{
+        font-size: 24px;
+    }
+}
 .infoBlock{
     padding-top: 0px;
     // margin-top: 150px;
@@ -970,7 +995,7 @@ img{
 }
 
 .yandex{
-    margin-top: 200px;
+    margin-top: 250px;
     @include mobile{
         margin-top: 120px;
     }
@@ -1476,6 +1501,7 @@ img{
         margin-right: auto;
     }
     @include mobile{
+        height: 45px;
         max-width: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -1517,6 +1543,7 @@ img{
 }
 
 .turbo_img{
+    max-width: 370px;
     @include tablet{
         max-width: 300px;
     }
@@ -1928,7 +1955,7 @@ img{
         width: 45%;
     }
     @include mobile{
-        width: 90%;
+        width: 45%;
     }
 }
 
@@ -1943,7 +1970,8 @@ img{
         height: auto;
     }
     @include mobile{
-        width: 180px;
+        width: 125px;
+        margin: 15px 0;
         height: auto;
     }
 }
@@ -2061,6 +2089,7 @@ img{
 
 .integrate_ell{
     height: auto;
+    max-width: 750px;
     @include m-desk{
         max-width: 700px;
         height: auto;
@@ -2115,29 +2144,6 @@ img{
     }
 }
 
-.backgroundCat::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background: url(../img/pictures/block_9_bg_cat.png) no-repeat;
-    background-size: 100%;
-    width: 374px;
-    height: 515px;
-    bottom: -50px;
-    right: -60px;
-    z-index: 10;
-    @include m-desk{
-        right: -80px;
-        width: 374px;
-        height: 415px;
-    }
-    @include sm-desk{
-        right: -60px;
-        width: 324px;
-        height: 345px;
-    }
-}
-
 
 @media screen and (max-width: 720px) {
     .bg8-1::before {
@@ -2145,138 +2151,7 @@ img{
         display: none;
     }
 }
-.block_6_text_2_wrap:before {
-    content: "";
-    display: block;
-    background: url("../img/pictures/block_6_text_2_img.png") no-repeat;
-    position: absolute;
-    bottom: -130px;
-    left: -165%;
-    width: 1233px;
-    height: 1106px;
-}
-@media (max-width: 575px){
-.block_6_text_2_wrap:before {
-    content: "";
-    display: block;
-    background: url("../img/pictures/block_6_text_2_img.png") no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: -500px;
-    left: -155%;
-    width: 950px;
-    height: 956px;
-    visibility: initial;
-}}
 
-.block_3{
-    a{
-        color: $white !important;
-        @include mobile {
-            color: $black !important;
-        }
-    }
-}
-
-.block3_2Rows_item{
-    margin-left: auto;
-    margin-right: auto;
-    
-    @include mobile{
-        margin: 20px 0 !important;
-    }
-}
-
-.block3_2Rows::before{
-    bottom: -200px;
-    @include sm-desk{
-        bottom: -100px;
-    }
-}
-
-
-@media screen and (max-width: 1280px) and (min-width: 1025px){
-    .block3_2Rows::before {
-        bottom: -200px;
-    }
-    }
-
-@media screen and (max-width: 575px){
-.block_3_item {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 20px 0;
-    box-shadow: 0px 21px 58.46px 20.54px rgba(0, 4, 2, 0.09);
-}
-}
-
-
-.block_4:before {
-    content: "";
-    display: block;
-    background: url("../img/pictures/block_4_bg_1.png") no-repeat center;
-    width: 100%;
-    max-width: 2070px;
-    height: 1160px;
-    position: absolute;
-    left: 0;
-    top: 200px;
-    right: 0;
-    bottom: -50px;
-    margin: 0 auto;
-    z-index: 1;
-}
-
-@media (max-width: 575px){
-.block_4:before {
-    top: 150px;
-    background-size: 330% !important;
-    background-position: top center;
-    visibility: initial;
-}
-}
-
-.block_4_kiselev {
-    text-align: center;
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.block_4_kiselev:before {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 322px;
-    background: url("../img/pictures/block_4_bg_2.png") no-repeat top center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: -350px;
-}
-
-.kiselev{
-    background-color: $blueLine;
-    border-radius: 30px;
-    padding: 15px;
-    box-shadow: 0 12px 32px rgba(117, 120, 130, 0.5);
-    
-}
-
-@media (max-width: 575px){
-.block_4_kiselev:before {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 140px;
-    background: url("../img/pictures/block_4_bg_2.png") no-repeat top center;
-    background-size: 100%;
-    position: absolute;
-    top: -140px;
-    left: -50px;
-    visibility: initial;
-}
-}
 
 .last-childNomargin{
     @media screen and (min-width: 991px){
@@ -2317,57 +2192,6 @@ img{
 // }
 
 
-.bad{
-    color: $white;
-    @include mobile {
-        text-align: center;
-        .col-12:last-child {
-            padding-left: 0;
-            padding: 5px !important;
-        }
-    }
-    .line-white{
-        @include mobile {
-            margin: auto;
-            margin-bottom: 20px;
-        }
-    }
-}
-
-.bad::before {
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: -10;
-    background: url('../img/pictures/ad-set-ell.png') no-repeat;
-    background-size: 100%;
-    width: 1685px;
-    height: 1000px;
-    top: -245px;
-    left: -27%;
-    @include sm-desk{
-        top: -250px;
-        left: -35%;
-    }
-    @include mobile{
-        top: -400px;
-        left: -35%;
-    }
-}
-
-.seo_bad{
-    margin-top: 10%;
-}
-.seo_bad2{
-    margin-top: 20%;
-    @include m-desk{
-        margin-top: 30%;
-    }
-    @include sm-desk{
-        margin-top: 40%;
-    }
-}
-
 .RowBlock3{
     justify-content: space-around;
     flex-wrap: wrap;
@@ -2388,6 +2212,7 @@ img{
     @include mobile{
         margin-top: 5px;
         max-width: 48%;
+        max-height: 300px;
     }
 }
 .firm_style2{
@@ -2399,52 +2224,24 @@ img{
     }
 }
 
-
-.seoBad_img{
-    max-width: 500px;
-    @include m-desk{
-        max-width: 400px;
-    }
-    @include sm-desk{
-        max-width: 400px;
-    }
-    @include mobile{
-        max-width: 280px;
-    }
-}
-
-
-.yandexRow_bad2{
-    margin: auto;
-    img{
-        margin: auto;
-        max-width: 900px;
-        @include mobile{
-            max-width: 280px !important;
-            margin: 10px;
-        }
-    }
-    @include mobile{
-        flex-direction: column;
-    }
-}
-
-
-.bad::after {
-    display: none;
-}
-
 .argo2{
     color: $white;
     @include mobile {
         color: $black;
         text-align: center;
+        flex-direction: column-reverse;
     }
     .line-white{
         @include mobile {
             margin: auto;
             margin-bottom: 20px;
         }
+    }
+}
+
+.argo_img{
+    @include mobile{
+        margin: 20px;
     }
 }
 
@@ -2457,7 +2254,7 @@ img{
     background-size: 100%;
     width: 1685px;
     height: 1000px;
-    top: -152px;
+    top: -380px;
     left: -35%;
     @include sm-desk{
         top: -152px;
@@ -2582,3 +2379,58 @@ img{
 .argo2::after {
     display: none;
 }
+
+.section_4{ 
+        .row{
+            margin-top: 45px;
+        }
+        .col-12{
+            .text{
+            &:nth-child(n+2) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+.block_8 .bg8-2 .col-12 .text {
+    margin: 30px 0;
+}
+
+.text {
+    font-size: 16px;
+    font-family: "Uni Neue";
+    line-height: 1.5;
+}
+
+.turbo_row_el{
+    width: 50%;
+}
+
+.turbo_row_el_img{
+    width: 25%;
+}
+
+@media (max-width: 575px) {
+    .block_3::before {
+      top: 570px;
+      background-size: 330% !important;
+      background-position: top center;
+      visibility: initial; } }
+  
+  @media (max-width: 767px) {
+    .block_3::before {
+      bottom: 0;
+      height: 690px; } }
+  
+  @media (max-width: 991px) {
+    .block_3::before {
+      bottom: 0;
+      height: 830px; } }
+  
+  @media (max-width: 1199px) {
+    .block_3::before {
+      background-size: cover;
+      width: 100%;
+      max-width: 1660px;
+      height: 930px; } }
+  

@@ -1,0 +1,159 @@
+
+
+@import 'fonts';
+@import 'mixin';
+@import 'colors';
+@import 'backgrounds';
+
+.cat_img{
+    width: 500px;
+    max-height: 570px;
+    @include tablet{
+        max-width: 300px;
+    }
+    @include mobile{
+        max-width: 200px;
+    }
+}
+
+
+// .bg4-1:before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     background: url(../images/bg4-28.png) no-repeat;
+//     background-size: 100%;
+//     width: 2363px;
+//     height: 866px;
+//     top: -291px;
+//     left: -766px;
+//     z-index: -1;
+// }
+
+
+@media screen and (min-width: 567px){
+    .bged-block1:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 2062px;
+        height: 650px;
+        background: url(../images/bg4-27.png) no-repeat center;
+        background-size: 100%;
+        z-index: -1;
+        left: -485px;
+        top: -50px;
+    }
+    }
+    @media screen and (min-width: 567px){
+     .bged-block1 {
+        margin: 105px 0;
+        padding-top: 100px;
+    }
+    }
+    
+    .blomer_bg8-2::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../images/bg4-28.png) no-repeat;
+        background-size: 110%;
+        width: 2363px;
+        height: 1006px;
+        top: -131px;
+        left: -766px;
+        z-index: -1; }
+    
+
+        .integrate_blomer{
+            background-image: url('../img/pictures/howImg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            min-height: 120vh;
+            padding-top: 350px !important;
+            @include m-desk{
+                min-height: 120vh;
+                padding-top: 150px !important;
+            }
+            @include sm-desk{
+                background-size: cover;
+                min-height: 140vh;
+                padding-top: 160px !important;
+            }
+            @include tablet{
+                background-size: cover;
+                padding-top: 20px !important;
+            }
+            @include mobile{
+                background-size: cover;
+                padding-top: 20px !important;
+            }
+        }
+        
+        
+.integrate_ell_blomer{
+    height: auto;
+    max-width: 750px;
+    @include m-desk{
+        max-width: 700px;
+        height: auto;
+    }
+    @include sm-desk{
+        max-width: 600px;
+        height: auto;
+    }
+    @include tablet{
+        max-width: 650px;
+        height: auto;
+    }
+    @include mobile{
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+
+
+.mainInfo_blomer{
+    margin: 20px;
+    @include mobile{
+        flex-direction: column !important;
+        margin: 0px;
+    }
+}
+
+
+.mainInfo_blomer_block{
+    max-width: 50%;
+    @include mobile{
+        max-width: 100%;
+    }
+}
+
+.mainInfo_blomer_img{
+    max-width: 650px;
+    height: 158px;
+    margin: 5px;
+    @include m-desk{
+        max-width: 500px;
+        height: 130px;
+    }
+    @include sm-desk{
+        max-width: 500px;
+        height: 130px;
+    }
+    @include mobile{
+        max-width: 300px;
+        height: 65px;
+        margin:  5px 0;
+    }
+}
+.mainInfo_blomer_img2{
+    max-width: 650px;
+    margin: 5px;
+    max-width: 50%;
+    @include mobile{
+        max-width: 100%;
+    }
+}
